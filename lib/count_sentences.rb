@@ -25,7 +25,7 @@ class String
 
   def count_sentences
     sentences = self.split
-    sentences.count do |value| 
+    sentences.count do |value|
       if value != ""
     end
   end
