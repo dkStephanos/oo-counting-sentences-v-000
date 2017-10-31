@@ -4,7 +4,7 @@ class String
 
   def sentence?
     if self.split("").last == "."
-      true
+      return true
     end
     false
   end
