@@ -24,8 +24,8 @@ class String
   end
 
   def count_sentences
-    self.split.count do |value|
-      if value == ""
+    self.split(".","!","?").count do |value|
+      if value != ""
       end
     end
   end
