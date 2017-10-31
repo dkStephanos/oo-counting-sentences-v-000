@@ -24,10 +24,6 @@ class String
   end
 
   def count_sentences
-    self.split(".!?").count do |value|
-      binding.pry
-      if value != ""
-      end
-    end
+    self.scan(/[^\.!?]+[\.!?]/).count
   end
 end
