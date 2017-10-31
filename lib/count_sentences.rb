@@ -26,6 +26,7 @@ class String
   def count_sentences
     self.split(".!?").count do |value|
       if value != ""
+        binding.pry
       end
     end
   end
